@@ -247,9 +247,8 @@ public class User {
             else if (a.getAchievementType() == AchievementType.ASSIGNMENT) assignmentSize++;
         }
 
-        if (achievementsSize >= 4 && projectAchievementsSize == 6) {
+        if (projectAchievementsSize == 7) {
             credits.add(AcademicCreditType.PROJECT);
-            achievementsSize -= 4;
         }
 
         if (achievementsSize >= 30 && assignmentSize >= 4) {
